@@ -7,7 +7,6 @@ const Details = ({index}) => {
     const { state } = useContext(userContext);
     const [details, setDetails] = useState({data:[],timeActive:'1d'});
     const [historicalMarket, setHistoricalMarket] = useState([]);
-    // const [visible, setVisible] = useState(false);
     
     const transfor = (price) =>  price > 9 ? Number(price).toFixed(2) : (price < 9 && price > 0.9999) ? Number(price).toFixed(4) : price;
 
@@ -34,7 +33,6 @@ const Details = ({index}) => {
     useEffect(() => {
         extraction('1d');
         getHistoricalMarket();
-        // setVisible(true);
       return () => {}
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -42,7 +40,6 @@ const Details = ({index}) => {
     return(
         <tr>
             <td colSpan={5}>
-                {/* <div className={visible ? "detalles visible" : "detalles"} > */}
                 <div className="detalles" >
                     <LineChart width={330} height={300} data={historicalMarket} >
                         <CartesianGrid strokeDasharray="5 5" />
