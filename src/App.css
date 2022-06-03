@@ -1,38 +1,111 @@
-.App {
+body {
+  background-color: rgb(227 225 225);
+}
+table:first-child {
+  min-width: 1000px;
+  border-collapse: collapse;
+  background-color: rgb(255 255 255);
+  margin: 1rem auto;
+  box-shadow: 0 0 10px 1px rgb(128 128 128 / 50%);
+}
+thead {
+  background-color: black;
+  color: rgb(255 255 255);;
+}
+table > tbody > tr > td:nth-child(3) > img {
+  height: 20px;
+  margin-right: 1rem;
+}
+.tr {
+  height: 4rem;
+}
+.tr > td:first-child {
+  font-weight: bold;
+}
+tbody > .tr:hover {
+  cursor: pointer;
+  background-color: rgb(128 128 128 / 10%);
+}
+table > tbody > .tr > td,
+table > thead > .tr > th {
+  text-align: end;
+  padding: 0 2rem;
+}
+table > thead > .tr > th:nth-child(1),
+table > tbody > .tr > td:nth-child(1),
+table > tbody > .tr > td:nth-child(2) {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table > thead > .tr > th:nth-child(3),
+table > tbody > .tr > td:nth-child(3){
+  text-align: start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td.down {
+  color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+td.up {
+  color: green;
+}
+ul {
+  list-style: none;
+}
+.detalles {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1rem 2rem;
+  /* height: 0px; */
+  /* padding: 0px; */
+  background-color: rgb(128 128 128 / 5%);
+  transition: all 0.5s ease-in-out;
+}
+.detalles.visible{
+  padding: 1rem 2rem;
+  height: 346px;
+}
+.detalles > div > ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
 }
-
-.App-link {
-  color: #61dafb;
+.detalles > div > ul > li {
+  padding: 0.3rem 1rem;
+  border-top: 1px solid rgb(128 128 128 / 20%);
+  border-bottom: 1px solid rgb(128 128 128 / 20%);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detalles > div > ul > li:first-child {
+  border-left: 1px solid rgb(128 128 128 / 20%);
+  border-radius: 5px 0 0 5px;
+}
+.detalles > div > ul > li:last-child {
+  border-right: 1px solid rgb(128 128 128 / 20%);
+  border-radius: 0 5px 5px 0;
+}
+.detalles > div > ul > li:hover {
+  background-color: rgb(128 128 128 / 20%);
+}
+.detalles > div > ul > li.timeActive {
+  background-color: rgb(128 128 128 / 20%);
+  font-weight: bold;
+}
+.detalles > div > table {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2rem;
+}
+.detalles > div > table > thead {
+  background-color: rgb(249 249 249);
+  color: black;
+  font-weight: bold;
+}
+.detalles > div > table > tbody {
+  background-color: rgb(249 249 249);
+}
+.detalles > div > table tr {
+  display: grid;
+}
+.detalles > div > table tr td {
+  border-bottom: 2px solid rgb(128 128 128 / 50%);
+  padding: 0.5rem 0;
 }

@@ -1,7 +1,14 @@
+import { Context } from "./context/Context";
+import Home from "./view/Home";
+import './App.css';
+
 function App() {
+
   return (
     <>
-      <h1>Crypto Market API</h1>
+      <Context>
+        <Home />
+      </Context>
     </>
   );
 }
