@@ -13,7 +13,7 @@ const Home = () => {
     
     useEffect(() => {
         getTicker();
-        setInterval(()=>getTicker(),30000);
+        setInterval(()=>getTicker(),60000);
       return () => {}
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
