@@ -1,5 +1,6 @@
 {
   "name": "crypto_market_api",
+  "homepage": "https://Marco90v.github.io/cryptoApiMarket/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
