@@ -7,7 +7,7 @@ const Home = () => {
     const { API_KEY , data } = state;
 
     const getTicker = async() => {
-        const rest = await fetch(`https://api.nomics.com/v1/currencies/ticker?status=active&key=${API_KEY}`).then(e=>e.json());
+        const rest = await fetch(`https://api.nomics.com/v1/currencies/ticker?status=active&key=${API_KEY}`).then(e=> e.json() );
         dispatch({ type:'newData', rest });
     }
     
