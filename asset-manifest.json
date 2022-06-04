@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cryptoApiMarket/static/css/main.3f66992e.css",
-    "main.js": "/cryptoApiMarket/static/js/main.61c80f4c.js",
+    "main.js": "/cryptoApiMarket/static/js/main.3a1fc17c.js",
     "static/js/787.1dbfb484.chunk.js": "/cryptoApiMarket/static/js/787.1dbfb484.chunk.js",
     "index.html": "/cryptoApiMarket/index.html",
     "main.3f66992e.css.map": "/cryptoApiMarket/static/css/main.3f66992e.css.map",
-    "main.61c80f4c.js.map": "/cryptoApiMarket/static/js/main.61c80f4c.js.map",
+    "main.3a1fc17c.js.map": "/cryptoApiMarket/static/js/main.3a1fc17c.js.map",
     "787.1dbfb484.chunk.js.map": "/cryptoApiMarket/static/js/787.1dbfb484.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f66992e.css",
-    "static/js/main.61c80f4c.js"
+    "static/js/main.3a1fc17c.js"
   ]
 }
